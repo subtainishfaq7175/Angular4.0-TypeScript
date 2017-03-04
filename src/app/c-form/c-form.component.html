@@ -1,0 +1,53 @@
+<md-card >
+  <md-card-header>
+    <md-card-title>Add a Trip</md-card-title>
+    <md-card-subtitle>Info of the Trip</md-card-subtitle>
+  </md-card-header>
+  <md-card-content>
+<form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+        <md-input-container colspan fxFlex="90" fxFill >
+          <input mdInput name="tripName" ngModel  placeholder="Name of your trip" fxFill>
+        </md-input-container>
+
+        <md-input-container fxFlex="90"  fxFill >
+          <input mdInput name="tripLocation" ngModel  placeholder="Departure Location" fxFill>
+        </md-input-container>
+
+        <md-input-container fxFlex="90"  fxFill >
+          <input mdInput name="arrivalLocation" ngModel  placeholder="Arrival Location" fxFill>
+        </md-input-container>
+
+       <md-input-container fxFlex="90"  fxFill >
+          <input mdInput name="price"  ngModel placeholder="Price" fxFill>
+        </md-input-container>
+
+        <md-input-container fxFlex="90"  fxFill >
+          <input mdInput name="sears" ngModel placeholder="Number of Seats Available" fxFill>
+        </md-input-container>
+
+        <md-input-container fxFlex="90"  fxFill >
+          <input mdInput name="bags"ngModel  placeholder="Number of bags per person" fxFill>
+        </md-input-container>
+
+        <md-input-container fxFlex="90"  fxFill >
+          <input mdInput name=""   placeholder="Number of bags per person" fxFill>
+        </md-input-container>
+
+        <md-input-container fxFlex="90"  fxFill >
+          <input mdInput name="deadlin" ngModel  placeholder="Application Deadline" fxFill>
+        </md-input-container>
+
+
+        <md-input-container fxFlex="90" fxFill >
+          <input mdInput name="trip" ngModel  placeholder="Date of Trip" fxFill>
+        </md-input-container>
+
+
+        <md-input-container fxFlex="90" fxFill >
+          <input mdInput name="Information" ngModel placeholder="Information On You" fxFill>
+        </md-input-container>
+
+    <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid" md-raised-button fxFill  fxFlex="10">Submit</button>
+</form>
+  </md-card-content>
+</md-card>
